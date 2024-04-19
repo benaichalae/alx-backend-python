@@ -5,6 +5,8 @@ takes a float and returns a function that
 multiplies another float by the first float.
 """
 
+from typing import Callable
+
 
 def make_multiplier(multiplier: float) -> Callable[[float], float]:
     """
