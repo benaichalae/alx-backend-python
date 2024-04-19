@@ -15,4 +15,4 @@ def floor(n: float) -> int:
     Returns:
         The floor of n (integer less than or equal to n).
     """
-    return n // 1
+    return int(n)
