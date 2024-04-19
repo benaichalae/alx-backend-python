@@ -4,10 +4,10 @@ This module defines a function 'safe_first_element'
 that handles lists of unknown element types.
 """
 
-from typing import Any, Union
+from typing import Any, Sequence, Union
 
 
-def safe_first_element(lst: list) -> Union[Any, None]:
+def safe_first_element(lst: Sequence[Any]) -> Union[Any, None]:
     """Returns the first element of a list if it exists, otherwise None.
 
     This function uses duck-typing to check if the list can be indexed
