@@ -3,8 +3,6 @@
 This module defines variables with specific values and types.
 """
 
-from typing import int, float, bool, str
-
 
 a: int = 1
 pi: float = 3.14

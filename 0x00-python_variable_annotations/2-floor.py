@@ -4,8 +4,6 @@ This module defines a function 'floor' that takes
 a float and returns its floor.
 """
 
-from typing import float
-
 
 def floor(n: float) -> int:
     """

@@ -4,8 +4,6 @@ This module defines a function 'to_str' that
 takes a float and returns its string representation.
 """
 
-from typing import float, str
-
 
 def to_str(n: float) -> str:
     """Converts a float to its string representation.

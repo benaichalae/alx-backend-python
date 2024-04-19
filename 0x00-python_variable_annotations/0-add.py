@@ -4,8 +4,6 @@ This module defines a function 'add' that
 takes two floats and returns their sum.
 """
 
-from typing import float
-
 
 def add(a: float, b: float) -> float:
     '''Adds two floats and returns their sum.

@@ -5,8 +5,6 @@ zooms in on a tuple by repeating its elements.
 """
 
 
-from typing import Tuple
-
 
 def zoom_array(lst: Tuple[int], factor: int = 2) -> Tuple[int, ...]:
     """
