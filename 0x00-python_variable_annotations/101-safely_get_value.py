@@ -4,7 +4,7 @@ This module defines a function 'safely_get_value'
 that retrieves a value from a dictionary with a default value.
 """
 
-from typing import Any, Dict, Union, TypeVar
+from typing import Any, Mapping, Union, TypeVar
 
 
 T = TypeVar('T')
