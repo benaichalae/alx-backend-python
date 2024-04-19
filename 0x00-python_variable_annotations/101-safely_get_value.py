@@ -8,11 +8,10 @@ from typing import Any, Dict, Union, TypeVar
 
 
 T = TypeVar('T')
+Res = Union[Any, T]
+Def = Union[T, None]
 
-
-def safely_get_value(
-        dct: Dict[Any, T], key: Any, default: Union[T, None] = None
-        ) -> Union[T, None]:
+def safely_get_value(dct: Mapping, key: Any, default: Def = None) -> Res:
     """
     Retrieves a value from a dictionary with
     a default value if the key is not found.
