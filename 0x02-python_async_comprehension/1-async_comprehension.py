@@ -5,15 +5,15 @@ an async comprehensing over async_generator,
 then return the 10 random numbers.
 """
 
-import asyncio
-import random
+from typing import List
+from importlib import import_module as using
 
 
-async def async_generator():
+async_generator = using('0-async_generator').async_generator
+
+
+async def async_comprehension() -> List[float]:
     """
     An asynchronous generator that yields random numbers between 0 and 10
-    after waiting for 1 second each time.
     """
-    for _ in range(10):
-        await asyncio.sleep(1)
-        yield random.randint(0, 10)
+    return [num async for num in async_generator()]
