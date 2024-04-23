@@ -6,14 +6,13 @@ then return the 10 random numbers.
 """
 
 from typing import List
-from importlib import import_module as using
-
-
-async_generator = using('0-async_generator').async_generator
 
 
 async def async_comprehension() -> List[float]:
     """
-    An asynchronous generator that yields random numbers between 0 and 10
+    Creates a list of 10 random numbers using
+    async comprehension from the async_generator coroutine.
     """
-    return [num async for num in async_generator()]
+    from . import async_generator
+
+    return [await num async for num in async_generator()]
