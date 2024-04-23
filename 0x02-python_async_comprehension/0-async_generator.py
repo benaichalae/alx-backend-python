@@ -3,13 +3,14 @@
 
 import asyncio
 import random
+from typing import Generator
 
 
 async def async_generator():
-  """
-  An asynchronous generator that yields random numbers between 0 and 10
-  after waiting for 1 second each time.
-  """
-  for _ in range(10):
-    await asyncio.sleep(1)
-    yield random.randint(0, 10)
+    """
+    An asynchronous generator that yields random numbers between 0 and 10
+    after waiting for 1 second each time.
+    """
+    for _ in range(10):
+        await asyncio.sleep(1)
+        yield random.randint(0, 10)
