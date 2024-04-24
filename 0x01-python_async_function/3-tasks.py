@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Module containing the task_wait_random function."""
 
+import asyncio
 from . import wait_random  # Import from current directory
-from asyncio import Task  # Explicit import for type annotation
 
 
 def task_wait_random(max_delay: int) -> Task[float]:

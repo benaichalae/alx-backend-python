@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Module containing the task_wait_n function."""
 
+import asyncio
 from typing import List
 
 from . import task_wait_random  # Import from current directory

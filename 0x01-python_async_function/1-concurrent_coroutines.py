@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Module containing the wait_n coroutine."""
 
+import asyncio
 from typing import List
 
 from . import wait_random  # Import from current directory
