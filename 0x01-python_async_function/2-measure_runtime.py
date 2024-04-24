@@ -2,12 +2,12 @@
 """Module containing the measure_time function."""
 
 import asyncio
-from time import time
+import time
 
-from . import wait_n  # Import from current directory
+wait_n = __import__('1-concurrent_coroutines').wait_n
 
 
-async def measure_time(n: int, max_delay: float = 10.0) -> float:
+async def measure_time(n: int, max_delay: int) -> float:
     """
     Measures the total execution time of wait_n
     and returns the average time per wait.

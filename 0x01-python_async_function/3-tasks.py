@@ -2,7 +2,9 @@
 """Module containing the task_wait_random function."""
 
 import asyncio
-from . import wait_random  # Import from current directory
+
+
+wait_random = __import__('0-basic_async_syntax').wait_random
 
 
 def task_wait_random(max_delay: int) -> Task[float]:

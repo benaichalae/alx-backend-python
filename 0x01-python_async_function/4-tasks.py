@@ -2,12 +2,12 @@
 """Module containing the task_wait_n function."""
 
 import asyncio
-from typing import List
+import List
 
-from . import task_wait_random  # Import from current directory
+task_wait_random = __import__('3-tasks').task_wait_random
 
 
-async def task_wait_n(n: int, max_delay: float = 10.0) -> List[float]:
+async def task_wait_n(n: int, max_delay: int) -> List[float]:
     """
     Creates and waits for n tasks running wait_random concurrently,
     returning their results in ascending order.

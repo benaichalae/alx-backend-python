@@ -4,10 +4,10 @@
 import asyncio
 from typing import List
 
-from . import wait_random  # Import from current directory
+wait_random = __import__('0-basic_async_syntax').wait_random
 
 
-async def wait_n(n: int, max_delay: float = 10.0) -> List[float]:
+async def wait_n(n: int, max_delay: int) -> List[float]:
     """
     Waits for n random delays concurrently and returns them in ascending order.
 
